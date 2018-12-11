@@ -17,9 +17,15 @@ Inspired by the Forget-me-not flower this script uses Twilio's trail account ser
 - Grab files from Myosotis
     <br>`$ git clone https://github.com/BrendanMoore42/Myosotis.git`
     
-- Create database, add friends, set up information:
+- Run user.py to set up friends.json and create events
 
-### Example:   
+### Shortcut Examples:
+- Add friend without GUI:
+    <br>```$ python add_friend.py Hermes 1507```
+- Remove friend without GUI:
+    <br>```$ python remove_friend.py Hermes```
+
+### GUI Example:   
 ```
 $ python user.py
 ========================= 
