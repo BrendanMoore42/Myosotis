@@ -12,12 +12,63 @@ Inspired by the Forget-me-not flower this script uses Twilio's trail account ser
 2. Get <a href="https://www.twilio.com/console/phone-numbers/incoming">phone number</a> and copy to credentials.py with '+' and country code. Add personal number to file. 
 
 ### Myosotis:
-1. In bash, go to target directory on local machine or server to copy files:
+- Create virtual environment and `pip install twilio` or install/setup in directory from <a href="https://github.com/twilio/twilio-python">Twilio Github</a>
+
+- Grab files from Myosotis
     <br>`$ git clone https://github.com/BrendanMoore42/Myosotis.git`
     
-2. Create database, add friends, set up information:
-    <br>```$ python user.py```
+- Create database, add friends, set up information:
+
+### Example:   
+```
+$ python user.py
+========================= 
+
+Welcome to Myosotis
+Never forget a birthday again!
+
+========================= 
+
+Options: 
+	1. Check Friend List
+	2. Add Friend
+	3. Remove Friend
+	4. Test Phone
+	5. Press "q" anytime to quit
+
+Please choose an option: 
+1 
+
+Friends List:
+Farnsworth 09/04
+Fry 01/01
+Leela 29/07 
+Bender 04/09 
+Zapp 30/06
+
+========================= 
+
+Options: 
+	1. Check Friend List
+	2. Add Friend
+	3. Remove Friend
+	4. Test Phone
+	5. Press "q" anytime to quit
     
+Please choose an option: 
+2.
+
+*Hint* Date format => Day/Month: ex. 28/07 
+
+Please type name: 
+Zoidberg
+Please type date: 
+05/05
+Zoidberg added
+
+=========================
+```
+
 3. Deploy
 - Set cron job on local or real server through online cloud provider: AWS, Digital Ocean, etc.
 - Example cron job for every day at noon:
