@@ -73,7 +73,7 @@ def main():
         """
         Date format must be Day/Month and just numbers.
         """
-        print('\n*Hint Date format => Day/Month: ex. 28/07 \n')
+        print('\n*Hint* Date format => Day/Month: ex. 28/07 \n')
 
         # define variables
         name = input('Please type name: \n')
@@ -135,6 +135,7 @@ def main():
 
             # cycle through menu items
             if command == '1':
+                print('\nFriends List:')
                 show_friends(friends)
             elif command == '2':
                 add_friend(friends)
@@ -149,6 +150,7 @@ def main():
             else:
                 print(f'\n{command} invalid option.\n'
                       f'Please try again...\n')
+            # print('\n')
             options()
         options()
 
