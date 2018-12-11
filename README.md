@@ -1,6 +1,8 @@
 # Myosotis
 Inspired by the Forget-me-not flower this script uses Twilio's trail account service to send yourself reminders of important events, such as birthdays, anniversaries, etc. It's easy to miss emails but texts are certain to catch your eye. Go to <a href="https://www.twilio.com/try-twilio">Twilio</a> and sign up for a free trial. Verify your number through twilio to send free texts to yourself. 
 
+This can be set up on a server with a cron task to run everyday indefintely. Cron instructions at bottom of readme. 
+
 ## Requirements:
 - Twilio==>v.6.2.1
 - Twilio trial account (or paid number, if member)
